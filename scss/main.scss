@@ -1,0 +1,96 @@
+@import './resets';
+@import './config';
+@import 'home';
+
+@function weight($weight-name) {
+    @return map-get($font-weights, $weight-name );
+}
+
+@mixin flexCenter($direction) {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: $direction;
+}
+
+@mixin darkTheme($dark-theme: true) {
+    @if $dark-theme {
+        // background: darken($primary-dark-color, 100%);
+        background: $primary-dark-color;
+        // color: lighten($primary-color, 100%);
+        color: $primary-color;
+    }
+}
+
+@mixin mobile {
+    @media (max-width: $mobile) {
+        @content;
+    }
+}
+
+body {
+    background-color: $primary-color;
+    color: $text-color;
+    height: 100vh;
+    line-height: 1.4;
+}   
+h1, h2, h3, h4, h5, h6 {
+    font-family: map-get($font-families, headings);
+}
+p, span, li, a, footer {
+    font-family: map-get($font-families, text);
+}
+a {
+    text-decoration: none;
+}
+
+ul {
+    list-style: none;
+    list-style-position: r;
+}
+li {
+  float: left;
+  padding: 0.5rem 0.8rem;
+}
+
+a {
+    color: $text-color;
+    &:hover {
+        color: $accent-color;
+    }
+}
+
+header {
+    position: fixed;
+    z-index: 2;
+    width: 100%;
+    padding: 1rem;
+}
+
+footer {
+    font-size: 1rem;
+    position: fixed;
+    bottom: 0.4rem;
+    right: 1rem;
+    padding: 1rem;
+}
+
+.main {
+    height: 100%;
+    width: 100%;
+    margin: 0 auto;
+
+    .social-icons {
+        position: fixed;
+        bottom: 1rem;
+        left: 1rem;
+    }
+
+    @include mobile {
+        flex-direction: column;
+    }
+}
+
+.dark {
+    @include darkTheme($dark-theme: false);
+}

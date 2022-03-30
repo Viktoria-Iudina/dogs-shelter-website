@@ -1,0 +1,31 @@
+$primary-color: #e1eaef;
+$primary-dark-color: #101826;
+$accent-color: #ea8a97;
+$accent-color2: #f4ad6d;
+$text-color: #312b48;
+
+$font-weights: (
+  "regular": 300,
+  "medium": 500,
+  "bold": 700,
+);
+
+$font-sizes: (
+  "parapraph": 13px,
+  "heading": 35px,
+  "second-heading": 25px,
+  "third-heading": 19px,
+);
+
+$font-families: (
+  "headings": "poppins",
+  "text": "tahoma",
+);
+
+$mobile: 800px;
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}

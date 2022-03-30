@@ -1,0 +1,21 @@
+@import './config';
+@import './resets';
+
+.home {
+    height: 100%;
+    padding-top: 30vh;
+    overflow: hidden;
+    align-items: center;
+    text-align: center;
+    background: 
+        linear-gradient(
+            to right,
+            rgba($primary-dark-color, 0.9),
+            rgba($primary-dark-color, 0.3)
+        ),
+        url('https://images.unsplash.com/photo-1522276498395-f4f68f7f8454?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8NTh8fGRvZ3N8ZW58MHx8MHx8&auto=format&fit=crop&w=500&q=60') center top;
+    background-size: cover;
+}
+h1, h2 {
+    color: white;
+}

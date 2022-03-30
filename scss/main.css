@@ -1,0 +1,118 @@
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+.home {
+  height: 100%;
+  padding-top: 30vh;
+  overflow: hidden;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-align: center;
+  background: -webkit-gradient(linear, left top, right top, from(rgba(16, 24, 38, 0.9)), to(rgba(16, 24, 38, 0.3))), url("https://images.unsplash.com/photo-1522276498395-f4f68f7f8454?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8NTh8fGRvZ3N8ZW58MHx8MHx8&auto=format&fit=crop&w=500&q=60") center top;
+  background: linear-gradient(to right, rgba(16, 24, 38, 0.9), rgba(16, 24, 38, 0.3)), url("https://images.unsplash.com/photo-1522276498395-f4f68f7f8454?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8NTh8fGRvZ3N8ZW58MHx8MHx8&auto=format&fit=crop&w=500&q=60") center top;
+  background-size: cover;
+}
+
+h1, h2 {
+  color: white;
+}
+
+body {
+  background-color: #e1eaef;
+  color: #312b48;
+  height: 100vh;
+  line-height: 1.4;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: "poppins";
+}
+
+p, span, li, a, footer {
+  font-family: "tahoma";
+}
+
+a {
+  text-decoration: none;
+}
+
+ul {
+  list-style: none;
+  list-style-position: r;
+}
+
+li {
+  float: left;
+  padding: 0.5rem 0.8rem;
+}
+
+a {
+  color: #312b48;
+}
+
+a:hover {
+  color: #ea8a97;
+}
+
+header {
+  position: fixed;
+  z-index: 2;
+  width: 100%;
+  padding: 1rem;
+}
+
+footer {
+  font-size: 1rem;
+  position: fixed;
+  bottom: 0.4rem;
+  right: 1rem;
+  padding: 1rem;
+}
+
+.main {
+  height: 100%;
+  width: 100%;
+  margin: 0 auto;
+}
+
+.main .social-icons {
+  position: fixed;
+  bottom: 1rem;
+  left: 1rem;
+}
+
+@media (max-width: 800px) {
+  .main {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+}
+/*# sourceMappingURL=main.css.map */
