@@ -1,6 +1,7 @@
-@import './resets';
-@import './config';
+@import 'resets';
+@import 'config';
 @import 'home';
+@import './menu';
 
 @function weight($weight-name) {
     @return map-get($font-weights, $weight-name );
