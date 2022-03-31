@@ -2,6 +2,9 @@
 @import 'config';
 @import 'home';
 @import './menu';
+@import './about';
+@import './dogs';
+@import './contact';
 
 @function weight($weight-name) {
     @return map-get($font-weights, $weight-name );
@@ -67,6 +70,23 @@ a {
     &:hover {
         color: $accent-color2;
     }
+}
+.text-primary {
+    color: $primary-color;
+}
+.text-secondary {
+    color: $accent-color2;
+}
+.text-color {
+    color: $text-color;
+}
+.text-accent-poppins {
+    color: $accent-color2;
+    font-family: map-get($font-families, headings);
+}
+
+.card-padding {
+    padding: 0.5rem 0.5rem 1rem 1.5rem;
 }
 
 header {

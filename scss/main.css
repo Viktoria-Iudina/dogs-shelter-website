@@ -39,8 +39,27 @@
   background-size: cover;
 }
 
+.home__btn-primary {
+  font-family: "poppins";
+  background-color: #ea8a97;
+  padding: 1em 1em;
+  border-radius: 25px;
+}
+
+.home__btn-primary:hover {
+  cursor: pointer;
+  -webkit-transition: all 0.5s ease-in-out;
+  transition: all 0.5s ease-in-out;
+  background-color: #de949e;
+  color: #e1eaef;
+}
+
 h1, h2 {
   color: #e1eaef;
+}
+
+h2 {
+  margin-bottom: 1.5em;
 }
 
 .menu-btn {
@@ -61,7 +80,7 @@ h1, h2 {
   top: 0.5rem;
   width: 28px;
   height: 3px;
-  background: #e1eaef;
+  background: #ea8a97;
   -webkit-transition: all 0.5s ease-in-out;
   transition: all 0.5s ease-in-out;
 }
@@ -72,7 +91,7 @@ h1, h2 {
   top: -8px;
   width: 28px;
   height: 3px;
-  background: #e1eaef;
+  background: #ea8a97;
   -webkit-transition: all 0.5s ease-in-out;
   transition: all 0.5s ease-in-out;
 }
@@ -83,7 +102,7 @@ h1, h2 {
   top: 8px;
   width: 20px;
   height: 3px;
-  background: #e1eaef;
+  background: #ea8a97;
   -webkit-transition: all 0.5s ease-in-out;
   transition: all 0.5s ease-in-out;
 }
@@ -195,6 +214,294 @@ h1, h2 {
           transition-delay: 0.55s;
 }
 
+.about {
+  padding-bottom: 2rem;
+}
+
+.about__bio-image {
+  height: 50vh;
+  width: 100%;
+  background: -webkit-gradient(linear, left top, right top, from(rgba(16, 24, 38, 0.9)), to(rgba(16, 24, 38, 0.3))), url("https://images.unsplash.com/photo-1608500567505-269fa4192c58?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MjY1fHxkYWxtYXRpbiUyMHB1cHB5fGVufDB8fDB8fA%3D%3D&auto=format&fit=crop&w=500&q=60") center center;
+  background: linear-gradient(to right, rgba(16, 24, 38, 0.9), rgba(16, 24, 38, 0.3)), url("https://images.unsplash.com/photo-1608500567505-269fa4192c58?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MjY1fHxkYWxtYXRpbiUyMHB1cHB5fGVufDB8fDB8fA%3D%3D&auto=format&fit=crop&w=500&q=60") center center;
+  background-size: cover;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+}
+
+.about__bio-image p {
+  margin-bottom: 2rem;
+}
+
+.about__bio {
+  width: 80%;
+  text-align: center;
+}
+
+.about__bio .text-secondary {
+  padding-bottom: 1rem;
+}
+
+.about .dogs {
+  width: 50vw;
+  margin: 2rem auto 0 auto;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr;
+      grid-template-columns: 1fr;
+  grid-gap: 2rem;
+}
+
+.about .dogs__dog {
+  background: #f2f6f8;
+  border-radius: 3px;
+  border-bottom: 7px solid #ea8a97;
+  border-top-left-radius: 50px;
+  box-shadow: 13px 10px 39px 20px #bbc8d0;
+  -webkit-box-shadow: 13px 10px 39px 20px #bbc8d0;
+  -moz-box-shadow: 13px 10px 39px 20px #bbc8d0;
+}
+
+.about .dogs__dog h2,
+.about .dogs__dog h3 {
+  margin: 0.5rem 0;
+}
+
+.about .dogs__dog h5 {
+  margin: 0.3rem 0;
+}
+
+.about .dogs__dog .sam-img {
+  background: url("https://images.unsplash.com/photo-1607352902554-0587bb0b1f28?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8Mzl8fGdvbGRlbiUyMHB1cHB5fGVufDB8fDB8fA%3D%3D&auto=format&fit=crop&w=400&q=60") center center;
+  background-size: cover;
+  border-top-left-radius: 50px;
+  height: 12em;
+  width: 100%;
+}
+
+.about .dogs__dog .carry-img {
+  background: url("https://st2.depositphotos.com/2892507/7461/i/600/depositphotos_74613811-stock-photo-sleepy-dalmatian-puppy.jpg") center center;
+  background-size: cover;
+  border-top-left-radius: 50px;
+  height: 12em;
+  width: 100%;
+}
+
+.about .dogs__dog .dusia-img {
+  background: url("https://images.unsplash.com/photo-1592028545328-7ff4385e450f?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1470&q=80") center center;
+  background-size: cover;
+  border-top-left-radius: 50px;
+  height: 12em;
+  width: 100%;
+}
+
+.about .dogs__dog .lila-img {
+  background: url("https://images.unsplash.com/photo-1646488438698-2d5f8bd732e4?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTZ8fGdvbGRlbiUyMHB1cHB5fGVufDB8fDB8fA%3D%3D&auto=format&fit=crop&w=400&q=60") center center;
+  background-size: cover;
+  border-top-left-radius: 50px;
+  height: 12em;
+  width: 100%;
+}
+
+.about .social-icons {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.about .social-icons a .fab {
+  color: #f4ad6d !important;
+}
+
+.about footer {
+  -webkit-transform: rotate(90deg) translate(-3rem, -5rem);
+          transform: rotate(90deg) translate(-3rem, -5rem);
+}
+
+.ourdogs {
+  padding-bottom: 2rem;
+}
+
+.ourdogs__bio-image {
+  height: 30vh;
+  width: 100%;
+  background: -webkit-gradient(linear, left top, right top, from(rgba(16, 24, 38, 0.9)), to(rgba(16, 24, 38, 0.3))), url("https://images.unsplash.com/photo-1522276498395-f4f68f7f8454?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8NTh8fGRvZ3N8ZW58MHx8MHx8&auto=format&fit=crop&w=500&q=60") center top;
+  background: linear-gradient(to right, rgba(16, 24, 38, 0.9), rgba(16, 24, 38, 0.3)), url("https://images.unsplash.com/photo-1522276498395-f4f68f7f8454?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8NTh8fGRvZ3N8ZW58MHx8MHx8&auto=format&fit=crop&w=500&q=60") center top;
+  background-size: cover;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+}
+
+.ourdogs .text-secondary {
+  padding-bottom: 1rem;
+}
+
+.ourdogs__card {
+  width: 60vw;
+  height: 30em;
+  margin: 2rem auto 0 auto;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr;
+      grid-template-columns: 1fr;
+  grid-gap: 2rem;
+  box-shadow: 13px 10px 39px 20px #bbc8d0;
+  -webkit-box-shadow: 13px 10px 39px 20px #bbc8d0;
+  -moz-box-shadow: 13px 10px 39px 20px #bbc8d0;
+}
+
+.ourdogs__puppy {
+  position: relative;
+  border-bottom: 5px solid #ea8a97;
+  overflow: hidden;
+  cursor: pointer;
+}
+
+.ourdogs__puppy img {
+  width: 100%;
+}
+
+.ourdogs__puppy::after {
+  content: '';
+  position: absolute;
+  top: 100%;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background-color: #312b48;
+  opacity: 0;
+  -webkit-transition: all 0.5s ease-in-out;
+  transition: all 0.5s ease-in-out;
+}
+
+.ourdogs__puppy:hover::after {
+  top: 0;
+  opacity: 0.5;
+}
+
+.ourdogs__btns {
+  position: absolute;
+  top: 0;
+  height: 100%;
+  width: 100%;
+  z-index: 1;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (1fr)[2];
+      grid-template-columns: repeat(2, 1fr);
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-align: center;
+}
+
+.ourdogs__btn {
+  color: #e1eaef;
+  -webkit-transition: all 0.5s ease-in-out;
+  transition: all 0.5s ease-in-out;
+}
+
+.ourdogs__btn:hover {
+  color: #f4ad6d;
+}
+
+.ourdogs .social-icons {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.ourdogs .social-icons a .fab {
+  color: #f4ad6d !important;
+}
+
+.ourdogs footer {
+  -webkit-transform: rotate(90deg) translate(-3rem, -5rem);
+          transform: rotate(90deg) translate(-3rem, -5rem);
+}
+
+.contact {
+  height: 100vh;
+  padding-top: 25vh;
+  overflow: hidden;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-align: center;
+  background: -webkit-gradient(linear, left top, right top, from(rgba(16, 24, 38, 0.9)), to(rgba(16, 24, 38, 0.3))), url("https://images.unsplash.com/photo-1605405809413-635a61f3d40a?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MjA0fHxkYWxtYXRpbiUyMHB1cHB5fGVufDB8fDB8fA%3D%3D&auto=format&fit=crop&w=500&q=60") center center;
+  background: linear-gradient(to right, rgba(16, 24, 38, 0.9), rgba(16, 24, 38, 0.3)), url("https://images.unsplash.com/photo-1605405809413-635a61f3d40a?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MjA0fHxkYWxtYXRpbiUyMHB1cHB5fGVufDB8fDB8fA%3D%3D&auto=format&fit=crop&w=500&q=60") center center;
+  background-size: cover;
+}
+
+.contact h2 {
+  color: #e1eaef;
+  margin-bottom: 2rem;
+}
+
+.contact i {
+  color: #e1eaef;
+}
+
+.contact i:hover {
+  color: #de949e;
+  -webkit-transition: all 0.5s ease-in-out;
+  transition: all 0.5s ease-in-out;
+}
+
+.contact__list {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr;
+      grid-template-columns: 1fr;
+  grid-gap: 2rem;
+  font-size: 17px;
+}
+
+.contact .contact-text {
+  font-family: "poppins";
+}
+
+.contact .social-icons {
+  position: initial;
+  margin-top: 2rem;
+}
+
 body {
   background-color: #e1eaef;
   color: #312b48;
@@ -240,6 +547,27 @@ a {
 
 a:hover {
   color: #f4ad6d;
+}
+
+.text-primary {
+  color: #e1eaef;
+}
+
+.text-secondary {
+  color: #f4ad6d;
+}
+
+.text-color {
+  color: #312b48;
+}
+
+.text-accent-poppins {
+  color: #f4ad6d;
+  font-family: "poppins";
+}
+
+.card-padding {
+  padding: 0.5rem 0.5rem 1rem 1.5rem;
 }
 
 header {

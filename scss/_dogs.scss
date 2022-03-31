@@ -1,0 +1,100 @@
+.ourdogs {
+  padding-bottom: 2rem;
+
+  &__bio-image {
+    height: 30vh;
+    width: 100%;
+    background: linear-gradient(
+        to right,
+        rgba($primary-dark-color, 0.9),
+        rgba($primary-dark-color, 0.3)
+      ),
+      url("https://images.unsplash.com/photo-1522276498395-f4f68f7f8454?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8NTh8fGRvZ3N8ZW58MHx8MHx8&auto=format&fit=crop&w=500&q=60")
+        center top;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-end;
+  }
+  
+    .text-secondary {
+      padding-bottom: 1rem;
+    }
+    
+    &__card {
+        width: 60vw;
+        height: 30em;
+        margin: 2rem auto 0 auto;
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-gap: 2rem;
+        box-shadow: 13px 10px 39px 20px rgba(187,200,208,1);
+-webkit-box-shadow: 13px 10px 39px 20px rgba(187,200,208,1);
+-moz-box-shadow: 13px 10px 39px 20px rgba(187,200,208,1);
+    }
+    
+    &__puppy {
+      position: relative;
+      border-bottom: 5px solid $accent-color;
+      overflow: hidden;
+      cursor: pointer;
+
+      img {
+        width: 100%;
+      }
+
+      &::after {
+          content: '';
+          position: absolute;
+          top: 100%;
+          left: 0;
+          height: 100%;
+          width: 100%;
+          background-color: $text-color;
+          opacity: 0;
+          @include transition-ease;
+      }
+
+      &:hover {
+          &::after {
+              top: 0;
+              opacity: 0.5;
+          }
+      }
+    }
+
+    &__btns {
+        position: absolute;
+        top: 0;
+        height: 100%;
+        width: 100%;
+        z-index: 1;
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        align-items: center;
+        text-align: center;
+    }
+
+    &__btn {
+        color: $primary-color;
+        @include transition-ease;
+
+        &:hover {
+           color: $accent-color2; 
+        }
+    }
+
+    .social-icons {
+        display: flex;
+        flex-direction: column;
+    }
+    .social-icons a .fab {
+        color: $accent-color2 !important;
+    }
+
+    footer {
+        transform: rotate(90deg) translate(-3rem, -5rem);
+    }
+
+}

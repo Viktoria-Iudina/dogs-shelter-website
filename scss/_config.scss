@@ -1,6 +1,7 @@
 $primary-color: #e1eaef;
 $primary-dark-color: #101826;
 $accent-color: #ea8a97;
+$accent-color-hover: #de949e;
 $accent-color2: #f4ad6d;
 $text-color: #312b48;
 
@@ -26,6 +27,26 @@ $mobile: 800px;
 
 @mixin transition-ease {
     transition: all 0.5s ease-in-out;
+}
+
+@mixin btn-primary {
+    font-family: map-get($font-families, headings);
+    background-color: $accent-color;
+    padding: 1em 1em;
+    border-radius: 25px;
+    &:hover {
+        cursor: pointer;
+        @include transition-ease;
+        background-color: $accent-color-hover;
+        color: $primary-color;
+    }
+}
+
+@mixin puppy-img {
+    background-size: cover;
+    border-top-left-radius: 50px;
+    height: 12em;
+    width: 100%;
 }
  
 * {

@@ -1,0 +1,89 @@
+.about {
+  padding-bottom: 2rem;
+
+  &__bio-image {
+    height: 50vh;
+    width: 100%;
+    background: linear-gradient(
+        to right,
+        rgba($primary-dark-color, 0.9),
+        rgba($primary-dark-color, 0.3)
+      ),
+      url("https://images.unsplash.com/photo-1608500567505-269fa4192c58?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MjY1fHxkYWxtYXRpbiUyMHB1cHB5fGVufDB8fDB8fA%3D%3D&auto=format&fit=crop&w=500&q=60")
+        center center;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-end;
+
+    p {
+      margin-bottom: 2rem;
+    }
+  }
+
+  &__bio {
+    width: 80%;
+    text-align: center;
+
+    .text-secondary {
+      padding-bottom: 1rem;
+    }
+  }
+
+  .dogs {
+    width: 50vw;
+    margin: 2rem auto 0 auto;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-gap: 2rem;
+
+    &__dog {
+      background: lighten($primary-color, 5%);
+      border-radius: 3px;
+      border-bottom: 7px solid $accent-color;
+      border-top-left-radius: 50px;
+      box-shadow: 13px 10px 39px 20px rgba(187,200,208,1);
+-webkit-box-shadow: 13px 10px 39px 20px rgba(187,200,208,1);
+-moz-box-shadow: 13px 10px 39px 20px rgba(187,200,208,1);
+
+      h2,
+      h3 {
+        margin: 0.5rem 0;
+      }
+      h5 {
+        margin: 0.3rem 0;
+      }
+      .sam-img {
+        background: url("https://images.unsplash.com/photo-1607352902554-0587bb0b1f28?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8Mzl8fGdvbGRlbiUyMHB1cHB5fGVufDB8fDB8fA%3D%3D&auto=format&fit=crop&w=400&q=60")
+        center center;
+        @include puppy-img;
+      }
+      .carry-img {
+        background: url("https://st2.depositphotos.com/2892507/7461/i/600/depositphotos_74613811-stock-photo-sleepy-dalmatian-puppy.jpg") center center;
+        @include puppy-img;
+      }
+      .dusia-img {
+        background: url("https://images.unsplash.com/photo-1592028545328-7ff4385e450f?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1470&q=80") center center;
+        @include puppy-img;
+      }
+      .lila-img {
+        background: url("https://images.unsplash.com/photo-1646488438698-2d5f8bd732e4?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTZ8fGdvbGRlbiUyMHB1cHB5fGVufDB8fDB8fA%3D%3D&auto=format&fit=crop&w=400&q=60") center center;
+        @include puppy-img;
+      }
+    }
+  }
+
+  .social-icons {
+    display: flex;
+    flex-direction: column;
+  }
+  .social-icons a .fab {
+    color: $accent-color2 !important;
+  }
+
+  footer {
+    transform: rotate(90deg) translate(-3rem, -5rem);
+  }
+
+}

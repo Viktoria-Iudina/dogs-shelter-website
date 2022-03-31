@@ -1,0 +1,47 @@
+.contact {
+    height: 100vh;
+    padding-top: 25vh;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    background: 
+        linear-gradient(
+            to right,
+            rgba($primary-dark-color, 0.9),
+            rgba($primary-dark-color, 0.3)
+        ),
+        url('https://images.unsplash.com/photo-1605405809413-635a61f3d40a?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MjA0fHxkYWxtYXRpbiUyMHB1cHB5fGVufDB8fDB8fA%3D%3D&auto=format&fit=crop&w=500&q=60') center center;
+    background-size: cover;
+
+    h2 {
+        color: $primary-color;
+        margin-bottom: 2rem;
+    }
+
+    i {
+        color: $primary-color;
+        &:hover {
+            color: $accent-color-hover;
+            @include transition-ease;
+        }
+    }
+
+    &__list {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-gap: 2rem;
+        font-size: map-get($font-sizes, parapraph);
+    }
+
+    .contact-text {
+        font-family: map-get($font-families, headings);
+    }
+
+    .social-icons {
+        position: initial;
+        margin-top: 2rem;
+    }
+    
+}
