@@ -40,7 +40,7 @@
 }
 
 h1, h2 {
-  color: white;
+  color: #e1eaef;
 }
 
 body {
@@ -52,6 +52,14 @@ body {
 
 h1, h2, h3, h4, h5, h6 {
   font-family: "poppins";
+}
+
+h1 {
+  font-size: 36px;
+}
+
+h2 {
+  font-size: 27px;
 }
 
 p, span, li, a, footer {
@@ -73,11 +81,13 @@ li {
 }
 
 a {
-  color: #312b48;
+  -webkit-transition: all 0.5s ease-in-out;
+  transition: all 0.5s ease-in-out;
+  color: #e1eaef;
 }
 
 a:hover {
-  color: #ea8a97;
+  color: #f4ad6d;
 }
 
 header {
