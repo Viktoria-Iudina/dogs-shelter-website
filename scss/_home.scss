@@ -18,6 +18,7 @@
 
     &__btn-primary {
         @include btn-primary;
+        margin: auto;
     }
 }
 h1, h2 {

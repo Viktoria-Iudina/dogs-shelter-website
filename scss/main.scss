@@ -120,6 +120,10 @@ footer {
     }
 }
 
+.btn-primary {
+    @include btn-primary;
+}
+
 .dark {
     @include darkTheme($dark-theme: false);
 }

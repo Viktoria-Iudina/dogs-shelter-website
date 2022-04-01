@@ -34,6 +34,8 @@ $mobile: 800px;
     background-color: $accent-color;
     padding: 1em 1em;
     border-radius: 25px;
+    width: fit-content;
+    display: block;
     &:hover {
         cursor: pointer;
         @include transition-ease;
@@ -46,7 +48,7 @@ $mobile: 800px;
     background-size: cover;
     border-top-left-radius: 50px;
     height: 12em;
-    width: 100%;
+    width: auto;
 }
  
 * {
